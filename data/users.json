@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "nombre": "master",
+      "email": "master@master",
+      "role": "master",
+      "password": "6a4deaae9e6ac5e15cfc1a07374d311b"
+    },
+    {
+      "nombre": "slave1",
+      "email": "slave1@slave1",
+      "role": "slave",
+      "password": "6a4deaae9e6ac5e15cfc1a07374d311b"
+    },
+    {
+      "nombre": "slave2",
+      "email": "slave2@slave2",
+      "role": "slave",
+      "password": "6a4deaae9e6ac5e15cfc1a07374d311b"
+    }
+  ]
+}

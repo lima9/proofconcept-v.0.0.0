@@ -1,0 +1,24 @@
+<div class="div2">
+    <div class="container">
+        <br>
+        <br>
+        <div class="jumbotron registrar-jumbo">
+            <h3>Log In</h3>
+
+            <div class="form-group" [(ngModel)]=[{'has-error':validaMail=='incorrecto'}]>
+                <h5 class="control-label">E-mail</h5>
+                <input type="email" style="text-align: center" class="form-control" id="setEmail" placeholder="Input a valid e-mail" required [(ngModel)]="user.email">
+            </div>
+
+            <div class="form-group" [(ngModel)]="[{'has-error':validaPassword=='incorrecto'}]">
+                <h5 class="control-label">Password</h5>
+                <input type="password" style="text-align: center" class="form-control" id="setPassword" placeholder="Write your desired password" required [(ngModel)]="user.password">
+            </div>
+
+            <div class="form-group">
+                <button (click)="onLoginClicked()">Login</button>
+            </div>
+        </div>
+        <p align="center">&copy; 2016 All Rights Reserver</p>
+    </div>
+</div>

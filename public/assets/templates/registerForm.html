@@ -1,0 +1,34 @@
+<div class="div3">
+    <div class="container">
+        <br>
+        <br>
+        <div class="jumbotron registrar-jumbo">
+            <h3>Register User</h3>
+            <div class="form-group">
+
+                <h5 class="control-label">Name</h5>
+                <input type="text" style="text-align: center;margin-top: -2%" class="form-control" id="setName"
+                       title="Debes poner un nombre" required [(ngModel)]="user.name" placeholder="name">
+
+                <h5 class="control-label">E-mail</h5>
+                <input type="email" style="text-align: center;margin-top: -2%" class="form-control" id="setEmail"
+                       title="Debes poner un email" required [(ngModel)]="user.email" placeholder="email">
+
+                <h5 class="control-label">Role</h5>
+                <select style="text-align: center;margin-top: -2%" class="form-control" required [(ngModel)]="user.role" placeholder="role" >
+                    <option style="text-align: center" value="master">Master</option>
+                    <option style="text-align: center" value="slave">Slave</option>
+                </select>
+
+                <h5 class="control-label">Password</h5>
+                <input type="password" style="text-align: center;margin-top: -2%" class="form-control"
+                       id="ponerPassword" title="Debes poner una contraseña" required [(ngModel)]="user.password" placeholder="password">
+
+            </div>
+            <div style="margin-top: +5%" class="form-group">
+                <button (click)="onRegisterClicked()">Register</button>
+            </div>
+        </div>
+        <p align="center">&copy; 2016 All Rights Reserver</p>
+    </div>
+</div>
